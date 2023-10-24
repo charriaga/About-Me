@@ -3,12 +3,9 @@
 function questionOne () {
     let question = prompt('Did Charlie go to college?');
     let answer = question.toLowerCase();
-
-    if (answer = 'yes') {
+    console.log(answer)
+    if (answer == 'yes' || answer == 'y') {
        //  console.log('That\'s right!')
-        alert('That\s right!');
-    } else if (answer = 'y') {
-        //console.log('That\'s right!')
         alert('That\s right!');
     } else {
         //console.log('nope')
@@ -22,10 +19,7 @@ function questionTwo () {
     let question = prompt('Did Charlie work retail?');
     let answer = question.toLowerCase();
 
-    if (answer = 'no') {
-        // console.log('That\'s right!')
-        alert('That\s right!');
-    } else if (answer = 'n') {
+    if (answer == 'no' || answer =='n') {
         // console.log('That\'s right!')
         alert('That\s right!');
     } else {
@@ -39,11 +33,8 @@ function questionThree () {
     let question = prompt('Is Charlie\'s favorite color blue?');
     let answer = question.toLowerCase();
 
-    if (answer = 'no') {
+    if (answer == 'no' || answer == 'n') {
        // console.log('That\'s right!')
-        alert('That\s right!');
-    } else if (answer = 'n') {
-        //console.log('That\'s right!')
         alert('That\s right!');
     } else {
          //console.log('nope')
@@ -56,10 +47,7 @@ function questionFour () {
     let question = prompt('Is Charlie short?');
     let answer = question.toLowerCase();
 
-    if (answer = 'yes') {
-        // console.log('That\'s right!')
-        alert('That\s right!');
-    } else if (answer = 'y') {
+    if (answer == 'yes' || answer == 'y') {
         // console.log('That\'s right!')
         alert('That\s right!');
     } else {
@@ -73,10 +61,7 @@ function questionFive () {
     let question = prompt('Does Charlie like Dracula?');
     let answer = question.toLowerCase();
 
-    if (answer = 'yes') {
-        //console.log('That\'s right!')
-        alert('That\s right!');
-    } else if (answer = 'y') {
+    if (answer == 'yes' || answer == 'y') {
         //console.log('That\'s right!')
         alert('That\s right!');
     } else {
