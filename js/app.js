@@ -1,5 +1,10 @@
 `use strict`
 
+let name = prompt("Heyyo, what's your name?")
+
+alert('Hello, ' + name + '!')
+
+
 function questionOne () {
     let question = prompt('Did Charlie go to college?');
     let answer = question.toLowerCase();
@@ -71,13 +76,11 @@ function questionFive () {
     return question
 }
 
-function yourName() {
-    let name = prompt('Heyyo, what\'s your name?');
+function farewell () {
+    alert ('Thank you for answering my questions, ' + name + ' :)')
+}
 
-    alert('Hello, ' + name + '!');
-
-    document.write('Greetings, ' + name);
-
-    return name
+function greetings () {
+    document.write('Salutations ' + name + '!')
 }
   
