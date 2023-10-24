@@ -2,12 +2,12 @@
 
 function questionOne () {
     let question = prompt('Did Charlie go to college?');
-    question.toLowerCase();
+    let answer = question.toLowerCase();
 
-    if (question = 'yes') {
+    if (answer = 'yes') {
        //  console.log('That\'s right!')
         alert('That\s right!');
-    } else if (question = 'y') {
+    } else if (answer = 'y') {
         //console.log('That\'s right!')
         alert('That\s right!');
     } else {
@@ -17,14 +17,15 @@ function questionOne () {
     return question
 }
 
+
 function questionTwo () {
     let question = prompt('Did Charlie work retail?');
-    question.toLowerCase();
+    let answer = question.toLowerCase();
 
-    if (question = 'no') {
+    if (answer = 'no') {
         // console.log('That\'s right!')
         alert('That\s right!');
-    } else if (question = 'n') {
+    } else if (answer = 'n') {
         // console.log('That\'s right!')
         alert('That\s right!');
     } else {
@@ -36,12 +37,12 @@ function questionTwo () {
 
 function questionThree () {
     let question = prompt('Is Charlie\'s favorite color blue?');
-    question.toLowerCase();
+    let answer = question.toLowerCase();
 
-    if (question = 'no') {
+    if (answer = 'no') {
        // console.log('That\'s right!')
         alert('That\s right!');
-    } else if (question = 'n') {
+    } else if (answer = 'n') {
         //console.log('That\'s right!')
         alert('That\s right!');
     } else {
@@ -53,12 +54,12 @@ function questionThree () {
 
 function questionFour () {
     let question = prompt('Is Charlie short?');
-    question.toLowerCase();
+    let answer = question.toLowerCase();
 
-    if (question = 'yes') {
+    if (answer = 'yes') {
         // console.log('That\'s right!')
         alert('That\s right!');
-    } else if (question = 'y') {
+    } else if (answer = 'y') {
         // console.log('That\'s right!')
         alert('That\s right!');
     } else {
@@ -70,12 +71,12 @@ function questionFour () {
 
 function questionFive () {
     let question = prompt('Does Charlie like Dracula?');
-    question.toLowerCase();
+    let answer = question.toLowerCase();
 
-    if (question = 'yes') {
+    if (answer = 'yes') {
         //console.log('That\'s right!')
         alert('That\s right!');
-    } else if (question = 'y') {
+    } else if (answer = 'y') {
         //console.log('That\'s right!')
         alert('That\s right!');
     } else {
@@ -85,21 +86,13 @@ function questionFive () {
     return question
 }
 
-function name () {
+function yourName() {
     let name = prompt('Heyyo, what\'s your name?');
-
-    while (name = '') {
-        prompt('your name please?');
-    }
 
     alert('Hello, ' + name + '!');
 
     document.write('Greetings, ' + name);
 
     return name
-}
-
-function farewell () {
-    
 }
   
