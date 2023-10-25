@@ -8,13 +8,13 @@ totalCorrect = 0
 
 
     let questionOne = prompt('Did Charlie go to college?');
-   // console.log(questionOne)
+   console.log(questionOne)
     if (questionOne.toLowerCase() == 'yes' || questionOne.toLowerCase() == 'y') {
-       //  console.log('That\'s right!')
+        console.log('That\'s right!')
         alert('That\'s right!');
         totalCorrect += 1;
     } else {
-        //console.log('nope')
+        console.log('nope')
         alert('nope.');
     }
 
@@ -22,11 +22,11 @@ totalCorrect = 0
     let questionTwo = prompt('Did Charlie work retail?');
 
     if (questionTwo.toLowerCase() == 'no' || questionTwo.toLowerCase() =='n') {
-        // console.log('That\'s right!')
+        console.log('That\'s right!')
         alert('That\'s right!');
         totalCorrect += 1;
     } else {
-         //console.log('nope')
+         console.log('nope')
         alert('nope.');
     }
 
@@ -34,11 +34,11 @@ totalCorrect = 0
     let questionThree = prompt('Is Charlie\'s favorite color blue?');
 
     if (questionThree.toLowerCase() == 'no' || questionThree.toLowerCase() == 'n') {
-       // console.log('That\'s right!')
+       console.log('That\'s right!')
         alert('That\'s right!');
         totalCorrect += 1;
     } else {
-         //console.log('nope')
+         console.log('nope')
         alert('nope.');
     }
 
@@ -46,11 +46,11 @@ totalCorrect = 0
     let questionFour = prompt('Is Charlie short?');
 
     if (questionFour.toLowerCase() == 'yes' || questionFour.toLowerCase() == 'y') {
-        // console.log('That\'s right!')
+        console.log('That\'s right!')
         alert('That\'s right!');
         totalCorrect += 1;
     } else {
-         //console.log('nope')
+         console.log('nope')
         alert('nope.');
     }
 
@@ -58,11 +58,11 @@ totalCorrect = 0
     let questionFive = prompt('Does Charlie like Dracula?');
 
     if (questionFive.toLowerCase() == 'yes' || questionFive.toLowerCase() == 'y') {
-        //console.log('That\'s right!')
+        console.log('That\'s right!')
         alert('That\'s right!');
         totalCorrect += 1;
     } else {
-         //console.log('nope')
+         console.log('nope')
         alert('nope.');
     }
 
@@ -93,8 +93,8 @@ let hobbies = ['drawing', 'reading', 'writing', 'cooking']
 for (i = 0; i < 6; i++) {
       
     let myHobbies = prompt('What are Charlie\'s hobbies?')
-    //console.log(myHobbies)
-    // console.log(myHobbies, hobbies[0])
+    console.log(myHobbies)
+    console.log(myHobbies, hobbies[0])
     if (hobbies.includes(myHobbies)) {
          alert("That's right!");
          i = 6;
