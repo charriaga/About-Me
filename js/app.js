@@ -4,80 +4,70 @@ let username = prompt("Heyyo, what's your name?")
 
 alert('Hello, ' + username + '!')
 
+totalCorrect = 0
 
-function questionOne () {
-    let question = prompt('Did Charlie go to college?');
-    let answer = question.toLowerCase();
-    console.log(answer)
-    if (answer == 'yes' || answer == 'y') {
+
+    let questionOne = prompt('Did Charlie go to college?');
+   // console.log(questionOne)
+    if (questionOne.toLowerCase() == 'yes' || questionOne.toLowerCase() == 'y') {
        //  console.log('That\'s right!')
-        alert('That\s right!');
+        alert('That\'s right!');
+        totalCorrect += 1;
     } else {
         //console.log('nope')
         alert('nope.');
     }
-    return question
-}
 
 
-function questionTwo () {
-    let question = prompt('Did Charlie work retail?');
-    let answer = question.toLowerCase();
+    let questionTwo = prompt('Did Charlie work retail?');
 
-    if (answer == 'no' || answer =='n') {
+    if (questionTwo.toLowerCase() == 'no' || questionTwo.toLowerCase() =='n') {
         // console.log('That\'s right!')
-        alert('That\s right!');
+        alert('That\'s right!');
+        totalCorrect += 1;
     } else {
          //console.log('nope')
         alert('nope.');
     }
-    return question
-}
 
-function questionThree () {
-    let question = prompt('Is Charlie\'s favorite color blue?');
-    let answer = question.toLowerCase();
 
-    if (answer == 'no' || answer == 'n') {
+    let questionThree = prompt('Is Charlie\'s favorite color blue?');
+
+    if (questionThree.toLowerCase() == 'no' || questionThree.toLowerCase() == 'n') {
        // console.log('That\'s right!')
-        alert('That\s right!');
+        alert('That\'s right!');
+        totalCorrect += 1;
     } else {
          //console.log('nope')
         alert('nope.');
     }
-    return question
-}
 
-function questionFour () {
-    let question = prompt('Is Charlie short?');
-    let answer = question.toLowerCase();
 
-    if (answer == 'yes' || answer == 'y') {
+    let questionFour = prompt('Is Charlie short?');
+
+    if (questionFour.toLowerCase() == 'yes' || questionFour.toLowerCase() == 'y') {
         // console.log('That\'s right!')
-        alert('That\s right!');
+        alert('That\'s right!');
+        totalCorrect += 1;
     } else {
          //console.log('nope')
         alert('nope.');
     }
-    return question
-}
 
-function questionFive () {
-    let question = prompt('Does Charlie like Dracula?');
-    let answer = question.toLowerCase();
 
-    if (answer == 'yes' || answer == 'y') {
+    let questionFive = prompt('Does Charlie like Dracula?');
+
+    if (questionFive.toLowerCase() == 'yes' || questionFive.toLowerCase() == 'y') {
         //console.log('That\'s right!')
-        alert('That\s right!');
+        alert('That\'s right!');
+        totalCorrect += 1;
     } else {
          //console.log('nope')
         alert('nope.');
     }
-    return question
-}
 
-function questionSix() {
-     for (i = 0; i < 6; i++) {
+
+     for (let i = 0; i < 6; i++) {
         let questionString = prompt('How old is Charlie?')
         let questionNumber = parseInt(questionString)
 
@@ -88,30 +78,30 @@ function questionSix() {
                 alert('Too high!');
             }
          } else {
-            alert('Correct!')
-            i = 6
+            alert('Correct!');
+            i = 6;
+            totalCorrect += 1;
          }
     }
     alert('Charlie is 25')
 
-    return questionNumber
 
-}
 
-function questionSeven() {
-    let hobbies = ['drawing', 'reading', 'writing', 'cooking']
 
-    for (let i = 0; i < 6; i++) {
+let hobbies = ['drawing', 'reading', 'writing', 'cooking']
+
+for (i = 0; i < 6; i++) {
       
-        let myHobbies = prompt('What are Charlie\'s hobbies?')
-        console.log(myHobbies)
-        console.log(myHobbies, hobbies[0])
-        if (hobbies.includes(myHobbies)) {
-            alert("That's right!")
-            i = 6
-        } else {
-            alert('nope!')
-        }
+    let myHobbies = prompt('What are Charlie\'s hobbies?')
+    //console.log(myHobbies)
+    // console.log(myHobbies, hobbies[0])
+    if (hobbies.includes(myHobbies)) {
+         alert("That's right!");
+         i = 6;
+         totalCorrect += 1;
+    } else {
+         alert('nope!');
+    }
 
 
         // if (myHobbies !== hobbies[0] || myHobbies !== hobbies[1] || myHobbies !== hobbies[2] || myHobbies !== hobbies[3] ) {
@@ -121,13 +111,14 @@ function questionSeven() {
         //     i = 6
         // }
     }
-}
+
+alert('You got ' + totalCorrect + ' out of 7 answers correct!');
 
 function farewell () {
-    alert ('Thank you for answering my questions, ' + name + ' :)')
+    alert ('Thank you for answering my questions, ' + username + ' :)');
 }
 
 function greetings () {
-    document.write('Salutations ' + name + '!')
+    document.write('Salutations ' + username + '!');
 }
   
