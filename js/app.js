@@ -1,8 +1,8 @@
 `use strict`
 
-let name = prompt("Heyyo, what's your name?")
+let username = prompt("Heyyo, what's your name?")
 
-alert('Hello, ' + name + '!')
+alert('Hello, ' + username + '!')
 
 
 function questionOne () {
@@ -74,6 +74,53 @@ function questionFive () {
         alert('nope.');
     }
     return question
+}
+
+function questionSix() {
+     for (i = 0; i < 6; i++) {
+        let questionString = prompt('How old is Charlie?')
+        let questionNumber = parseInt(questionString)
+
+         if (questionNumber !== 25) {
+            if (questionNumber < 25) {
+                alert('Too low!');
+            } else {
+                alert('Too high!');
+            }
+         } else {
+            alert('Correct!')
+            i = 6
+         }
+    }
+    alert('Charlie is 25')
+
+    return questionNumber
+
+}
+
+function questionSeven() {
+    let hobbies = ['drawing', 'reading', 'writing', 'cooking']
+
+    for (let i = 0; i < 6; i++) {
+      
+        let myHobbies = prompt('What are Charlie\'s hobbies?')
+        console.log(myHobbies)
+        console.log(myHobbies, hobbies[0])
+        if (hobbies.includes(myHobbies)) {
+            alert("That's right!")
+            i = 6
+        } else {
+            alert('nope!')
+        }
+
+
+        // if (myHobbies !== hobbies[0] || myHobbies !== hobbies[1] || myHobbies !== hobbies[2] || myHobbies !== hobbies[3] ) {
+        //     alert('Nope!');
+        // } else {
+        //     alert('That\'s right!');
+        //     i = 6
+        // }
+    }
 }
 
 function farewell () {
