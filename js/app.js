@@ -4,21 +4,35 @@ let username = prompt("Heyyo, what's your name?")
 
 alert('Hello, ' + username + '!')
 
-totalCorrect = 0
+let totalCorrect = 0;
 
+let questionOne = ['Did Charlie go to college?', 'yes', 'y'];
+let questionTwo = ['Did Charlie work retail?', 'no', 'n'];
+let questionThree = ['Is Charlie\'s favorite color blue?', 'no', 'n'];
+let questionFour = ['Is Charlie short?', 'yes', 'y'];
+let questionFive = ['Does Charlie like Dracula?', 'yes', 'y'];
 
-    let questionOne = prompt('Did Charlie go to college?');
-   console.log(questionOne)
-    if (questionOne.toLowerCase() == 'yes' || questionOne.toLowerCase() == 'y') {
-        console.log('That\'s right!')
+    function askQuestion (question) {
+        let response = prompt(question[0]);
+        console.log(response);
+
+    if (response.toLowerCase() === question[1] || response.toLowerCase() === question[2]) {
+        console.log('That\'s right!');
         alert('That\'s right!');
         totalCorrect += 1;
     } else {
-        console.log('nope')
+        console.log('nope');
         alert('nope.');
     }
+}
 
+askQuestion(questionOne);
+askQuestion(questionTwo);
+askQuestion(questionThree);
+askQuestion(questionFour);
+askQuestion(questionFive);
 
+/*
     let questionTwo = prompt('Did Charlie work retail?');
 
     if (questionTwo.toLowerCase() == 'no' || questionTwo.toLowerCase() =='n') {
@@ -65,7 +79,7 @@ totalCorrect = 0
          console.log('nope')
         alert('nope.');
     }
-
+*/
 
      for (let i = 0; i < 6; i++) {
         let questionString = prompt('How old is Charlie?')
@@ -121,4 +135,3 @@ function farewell () {
 function greetings () {
     document.write('Salutations ' + username + '!');
 }
-  
