@@ -12,9 +12,9 @@ let questionThree = ['Is Charlie\'s favorite color blue?', 'no', 'n'];
 let questionFour = ['Is Charlie short?', 'yes', 'y'];
 let questionFive = ['Does Charlie like Dracula?', 'yes', 'y'];
 
-    function askQuestion (question) {
-        let response = prompt(question[0]);
-        console.log(response);
+function askQuestion (question) {
+    let response = prompt(question[0]);
+    console.log(response);
 
     if (response.toLowerCase() === question[1] || response.toLowerCase() === question[2]) {
         console.log('That\'s right!');
@@ -24,13 +24,15 @@ let questionFive = ['Does Charlie like Dracula?', 'yes', 'y'];
         console.log('nope');
         alert('nope.');
     }
+
 }
 
-askQuestion(questionOne);
-askQuestion(questionTwo);
-askQuestion(questionThree);
-askQuestion(questionFour);
-askQuestion(questionFive);
+let questionHolder = [questionOne, questionTwo, questionThree, questionFour, questionFive];
+
+for (let i = 0; i < 5; i += 1 ) {
+    askQuestion(questionHolder[i]);
+}
+
 
 /*
     let questionTwo = prompt('Did Charlie work retail?');
@@ -108,7 +110,7 @@ for (i = 0; i < 6; i++) {
       
     let myHobbies = prompt('What are Charlie\'s hobbies?')
     console.log(myHobbies)
-    console.log(myHobbies, hobbies[0])
+    //console.log(myHobbies, hobbies[0])
     if (hobbies.includes(myHobbies)) {
          alert("That's right!");
          i = 6;
