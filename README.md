@@ -13,3 +13,5 @@ Class 3 lab, continued guessing game
 references:
 
 - app.js: line 109 - asked ChaptGPT for a shorter way to check whether my prompt response matched any items in the array
+
+- app.js: Contributor, Caleb Hemphill
